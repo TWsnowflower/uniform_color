@@ -1,38 +1,82 @@
-﻿<html>
-<boby>
-	<br><br>
-	<div style="position:absolute; text-align:center; width:100%">
-		<img src = "./bg.png" style="position:absolute; margin-left:-175px; width:350px">
+﻿<html style="width:1200px; margin:0 auto">
+	<br><br><br><br>
+	<font size="10"><b>원하는 캐릭터를 선택하세요</b></font><br><br>
+	<table border="3" style="text-align:center; line-height:2;">
+		<tr height="180px">
+			<td onclick="characterSelect('jo')">
+				<img src="./jo/jo.png"><br>
+				<b>조슈아</b>
+			</td>
+			<td onclick="characterSelect('mill')">
+				<img src="./mill/mill.png"><br>
+				<b>밀라</b>
+			</td>
+			<td onclick="characterSelect('leesol')">
+				<img src="./leesol/leesol.png"><br>
+				<b>이솔렛</b>
+			</td>
+			<td onclick="characterSelect('sibel')">
+				<img src="./sibel/sibel.png"><br>
+				<b>시벨린</b>
+			</td>
+			<td onclick="characterSelect('ti')">
+				<img src="./ti/ti.png" ><br>
+				<b>티치엘</b>
+			</td>
+			<td onclick="characterSelect('ru')">
+				<img src="./ru/ru.png" ><br>
+				<b>루시안</b>
+			</td>
+			<td onclick="characterSelect('mak')">
+				<img src="./mak/mak.png" ><br>
+				<b>막시민</b>
+			</td>
+			<td onclick="characterSelect('nok')">
+				<img src="./nok/nok.png" ><br>
+				<b>녹턴</b>
+			</td>
+		</tr>
+		<tr height="180px">
+			<td width="150px" onclick="characterSelect('spin')">
+				<img src="./spin/spin.png" ><br>
+				<b>이스핀</b>
+			</td>
+			<td width="180px" onclick="characterSelect('chloe')">
+				<img src="./chloe/chloe.png" ><br>
+				<b>클로에</b>
+			</td>
+			<td width="150px" onclick="characterSelect('ran')">
+				<img src="./ran/ran.png"><br>
+				<b>란지에</b>
+			</td>
+			<td width="150px" onclick="characterSelect('roa')">
+				<img src="./roa/roa.png"><br>
+				<b>로아미니</b>
+			</td>
+			<td width="150px" onclick="characterSelect('naya')">
+				<img src="./naya/naya.png"><br>
+				<b>나야트레이</b>
+			</td>
+			<td width="150px" onclick="characterSelect('bo')">
+				<img src="./bo/bo.png" ><br>
+				<b>보리스</b>
+			</td>
+			<td width="150px" onclick="characterSelect('ana')">
+				<img src="./ana/ana.png" ><br>
+				<b>아나이스</b>
+			</td>
+			<td width="150px" onclick="characterSelect('eja')">
+				<img src="./eja/eja.png" ><br>
+				<b>이자크</b>
+			</td>
+		</tr>
 
-		<div style="position:absolute; width:100%; height:100%; padding-top:80px">
-			<select id="ch_obj" onchange="characterSelect()" style="font-size:20px;">
-				<option value="jo">조슈아</option>
-				<option value="mill">밀라</option>
-				<option value="leesol">이솔렛</option>
-				<option value="sibel">시벨린</option>
-				<option value="ti">티치엘</option>
-				<option value="ru">루시안</option>
-				<option value="mak">막시민</option>
-				<option value="nok">녹턴</option>
-				<option value="spin">이스핀</option>
-				<option value="chloe">클로에</option>
-				<option value="ran">란지에</option>
-				<option value="roa">로아미니</option>
-				<option value="naya">나야트레이</option>
-				<option value="bo">보리스</option>
-				<option value="ana" selected="selected">아나이스</option>
-				<option value="eja">이자크</option>
-			</select>
-		</div>
-	</div>
-
-
-	</body>
+	</table>
 
 	<script>
 
-		function characterSelect(){
-			location.href = "./ana.html";
+		function characterSelect(str){
+			location.href = "./"+str+".html";
 		}
 	</script>
 </html>
